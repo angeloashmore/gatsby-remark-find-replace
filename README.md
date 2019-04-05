@@ -29,8 +29,8 @@ plugins: [
             },
 
             // By default, find values are prefixed to reduce the chances of
-            // conflicting with real content. You can change, or disable, the
-            // prefix here.
+            // conflicting with real content. You can change the prefix here.
+            // Set it to `false` to disable the prefix.
             prefix: '%',
           },
         },
