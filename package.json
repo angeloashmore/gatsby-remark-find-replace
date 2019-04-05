@@ -37,6 +37,7 @@
     "standard-version": "^5.0.2"
   },
   "dependencies": {
+    "escape-string-regexp": "^1.0.5",
     "unist-util-visit": "^1.4.0"
   },
   "husky": {

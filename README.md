@@ -31,7 +31,7 @@ plugins: [
             // By default, find values are prefixed to reduce the chances of
             // conflicting with real content. You can change, or disable, the
             // prefix here.
-            prefix: '%MD_',
+            prefix: '%',
           },
         },
       ],
@@ -45,9 +45,11 @@ plugins: [
 ```markdown
 # My Special Blog Post
 
-Welcome to %MD_COMPANY's new blog! Please do not copy this post.
+Welcome to %COMPANY's new blog! Please do not copy this post.
 
-%MD_COPYRIGHT
+This won't be replaced: \%COMPANY
+
+%COPYRIGHT
 ```
 
 Turns into…
@@ -56,6 +58,8 @@ Turns into…
 # My Special Blog Post
 
 Welcome to My Company's new blog! Please do not copy this post.
+
+This won't be replaced: %COMPANY
 
 Copyright 2019 My Company
 ```
