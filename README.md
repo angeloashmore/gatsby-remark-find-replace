@@ -30,7 +30,7 @@ plugins: [
 
             // By default, find values are prefixed to reduce the chances of
             // conflicting with real content. You can change the prefix here.
-            // Set it to `false` to disable the prefix.
+            // Set to `false` to disable the prefix.
             prefix: '%',
           },
         },
