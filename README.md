@@ -47,8 +47,6 @@ plugins: [
 
 Welcome to %COMPANY's new blog! Please do not copy this post.
 
-This won't be replaced: \%COMPANY
-
 %COPYRIGHT
 ```
 
@@ -58,8 +56,6 @@ Turns into…
 # My Special Blog Post
 
 Welcome to My Company's new blog! Please do not copy this post.
-
-This won't be replaced: %COMPANY
 
 Copyright 2019 My Company
 ```
