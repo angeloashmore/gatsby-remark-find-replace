@@ -3,7 +3,7 @@ import visit from 'unist-util-visit'
 const escapeRegExp = str =>
   str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&')
 
-export default ({ markdownAST }, { definitions, prefix = 'MD_' }) => {
+export default ({ markdownAST }, { definitions, prefix = '%MD_' }) => {
   const SCOPED_ABBR_RE = RegExp(
     '\\((' +
       Object.keys(definitions)

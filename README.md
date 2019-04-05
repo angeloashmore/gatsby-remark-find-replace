@@ -31,7 +31,7 @@ plugins: [
             // By default, find values are prefixed to reduce the chances of
             // conflicting with real content. You can change, or disable, the
             // prefix here.
-            prefix: '$MD_',
+            prefix: '%MD_',
           },
         },
       ],
@@ -42,17 +42,17 @@ plugins: [
 
 ## Example
 
-```md
+```markdown
 # My Special Blog Post
 
-Welcome to \$MD_COMPANY's new blog! Please do not copy this post.
+Welcome to %MD_COMPANY's new blog! Please do not copy this post.
 
-\$MD_COPYRIGHT
+%MD_COPYRIGHT
 ```
 
 Turns into…
 
-```md
+```markdown
 # My Special Blog Post
 
 Welcome to My Company's new blog! Please do not copy this post.
