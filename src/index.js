@@ -21,14 +21,15 @@ module.exports = ({ markdownAST }, { replacements = {}, prefix = '%' }) => {
 
   const replacer = (_match, name) => replacements[stripPrefix(name)]
 
-  //Go through all text, html, code, inline code, and links
+  // Go through all text, html, code, inline code, and links.
   visit(markdownAST, ['text', 'html', 'code', 'inlineCode', 'link'], node => {
     if (node.type === 'link') {
-      //for links the the text value is replaced by text node, so we change the url value
+      // For links, the text value is replaced by text node, so we change the
+      // URL value.
       const processedText = node.url.replace(regexp, replacer)
       node.url = processedText
     } else {
-      //for all other nodes replace the node value
+      // For all other nodes, replace the node value.
       const processedText = node.value.replace(regexp, replacer)
       node.value = processedText
     }
