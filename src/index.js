@@ -23,7 +23,7 @@ module.exports = ({ markdownAST }, { replacements = {}, prefix = '%' }) => {
 
   //Go through all text, html, code, inline code, and links
   visit(markdownAST, ['text', 'html', 'code', 'inlineCode', 'link'], node => {
-    if (node.type === 'link'){
+    if (node.type === 'link') {
       //for links the the text value is replaced by text node, so we change the url value
       const processedText = node.url.replace(regexp, replacer)
       node.url = processedText
@@ -33,6 +33,6 @@ module.exports = ({ markdownAST }, { replacements = {}, prefix = '%' }) => {
       node.value = processedText
     }
   })
-  
+
   return markdownAST
 }
